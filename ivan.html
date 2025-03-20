@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Garet&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+/* Общие стили */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Сайдбар */
+.sidebar {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 30px 20px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.sidebar img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 4px solid #ecf0f1;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #7f8c8d;
+  padding-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.sidebar a.github {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a.github:hover {
+  background-color: #2980b9;
+}
+
+/* Основная часть */
+.main {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.main h1 {
+  font-family: 'Garet', sans-serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.main h3 {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 15px;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ecf0f1;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer img {
+  width: 150px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+
+    </style>
+  <div class="container">
+      <div class="sidebar">
+        <img src="team-presentation/photo_2025-03-20_14-10-45.jpg" alt="Ivan Kovalchuk" style="width: 190px; height: auto; margin-left: 20px;">
+
+          
+          <h2>KONTAKT:</h2>
+          <p>📞 +49 151 8588 7502</p>
+          <p>📧 ivankovalchuk1004@gmail.com</p>
+          <p>📍 Oberer 35, 95028 Hof</p>
+          
+          <h2>SPRACHE:</h2>
+          <p>Ukrainisch und Russisch – Muttersprache</p>
+          <p>Englisch – B2</p>
+          <p>Deutsch – B1</p>
+          
+          <h2>PC-KENNTNISSE:</h2>
+          <p>Programmiersprachen: HTML, CSS, PHP, C++, C#, SQL</p>
+          <p>Software: MS Office (Word, Excel, PowerPoint), Adobe Acrobat</p>
+          
+          <h2>GITHUB:</h2>
+          <a href="https://github.com/lIIIIlIlIIIIlII" class="github">Ivan Kovalchuk</a>
+      </div>
+      
+      <div class="main">
+          <h1>IVAN KOVALCHUK</h1>
+          <h3>Technischer Informatik Assistent für Anwendungsentwicklung</h3>
+          
+          <div class="section">
+              <p class="section-title">BILDUNGSWEG:</p>
+              <ul>
+                  <li>09/2009 – 05/2018: Praktikschule in der Ukraine, 1. bis 9. Klasse</li>
+                  <li>09/2018 – 05/2023: Maritime College of Technical Fleet (MKTF), Abschluss: Q2</li>
+                  <li>05/2022 – 06/2023: VHS-Integrationskurse in Deutschland, Deutschniveau: B1</li>
+                  <li>Seit 06/2022 – 07/2024: Euro Akademie Anwendungsentwicklung</li>
+                  <li>Seit 09/2023 – voraussichtlich 07/2025: Berufsschule in Hof, aktuelle Ausbildung: Technischer Assistent für Informatik</li>
+              </ul>
+          </div>
+          
+          <div class="section">
+              <p class="section-title">PRAKTISCHE ERFAHRUNG:</p>
+              <ul>
+                  <li>05.08.2024 – 09.08.2024: Praktikum als Anwendungsentwickler bei Accenture</li>
+                  <li>06/2021 – 12/2021: Sechmonatiges Praktikum als Deck-Kadett auf einem Schiff (im Rahmen des Studiums am MKTF)</li>
+              </ul>
+          </div>
+          
+          <div class="footer">
+              <p>Hof, 18.02.2025</p>
+              <p>Ivan Kovalchuk</p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
