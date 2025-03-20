@@ -1,4 +1,4 @@
-var baseUrl = "https://random-data-api.com/api/v2/users";
+var baseUrl = "https://random-data-api.com/api/v2/beers";
 
 function fetchData() {
   let resultSize = document.getElementById("resultSize").value;
@@ -13,34 +13,39 @@ function fetchData() {
     });
 }
 
+function clearTable() {
+  const table = document.getElementById("beerTable");
+  table.innerHTML="";
+}
+
 function displayResults(results) {
     // If the result is only one element (not an array), convert it into an array
-  if (!Array.isArray(results)) {
+  clearTable(); // wenn ich das benutze geht mein head weg, müsste tbody seperieren
+    if (!Array.isArray(results)) {
     results = [results];
   }
   if (results.length === 0) {
     const para = document.createElement("p");
     para.innerHTML = "No results returned.";
-    document.getElementById("usersTable").appendChild(para);
+    document.getElementById("beerTable").appendChild(para);
   } else {
-    for (const user of results) {
-      console.log(user)
+    for (const beers of results) {
+      console.log(beers)
       const rowTable = document.createElement("tr");
-      const first_name = document.createElement("td");
-      first_name.innerHTML = user.first_name;
-      rowTable.appendChild(first_name);
-      const last_name = document.createElement("td");
-      last_name.innerHTML = user.last_name;
-      rowTable.appendChild(last_name);
-      const date_of_birth = document.createElement("td");
-      date_of_birth.innerHTML = user.date_of_birth;
-      rowTable.appendChild(date_of_birth);
-      const avatar = document.createElement("td");
-      const img = document.createElement("img");
-      img.src = user.avatar;
-      avatar.appendChild(img);
-      rowTable.appendChild(avatar);
-      document.getElementById("usersTable").appendChild(rowTable);
+      const brand = document.createElement("td");
+      brand.innerHTML = beers.brand;
+      rowTable.appendChild(brand);
+      const name = document.createElement("td");
+      name.innerHTML = beers.name;
+      rowTable.appendChild(name);
+      const style = document.createElement("td");
+      style.innerHTML = beers.style;
+      rowTable.appendChild(style);
+      const yeast = document.createElement("td");
+      yeast.innerHTML = beers.yeast;
+      rowTable.appendChild(yeast);
+      document.getElementById("beerTable").appendChild(rowTable);
     }
   }
 }
+
