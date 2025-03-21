@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Team - Internship Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Skills - Internship Team</title>
   <link rel="stylesheet" href="css/coding-skills.css">
 </head>
 <body>
@@ -14,27 +15,73 @@
 
   <!-- Kopfbereich -->
   <header>
-    <h1>Unser Team</h1>
+    <h1>Our Coding Skills</h1>
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
-        <li><a href="bewerbung.html">Bewerbung</a></li>
-        <li><a href="coding-skills.html">Codingskills</a></li>
-        <li><a href="soft-skills.html">Softskills</a></li>
-        <li><a href="kontaktdaten.html">Kontaktdaten</a></li>
+        <li><a href="bewerbung.html">Application</a></li>
+        <li><a href="coding-skills.html">Coding Skills</a></li>
+        <li><a href="soft-skills.html">Soft Skills</a></li>
+        <li><a href="kontaktdaten.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hauptinhalt -->
   <main>
-    <h2>Teammitglieder</h2>
-    <ul class="team-list">
-      <li><a href="felix.html">Felix</a></li>
-      <li><a href="ivan.html">Ivan</a></li>
-      <li><a href="noah.html">Noah</a></li>
-      <li><a href="ella.html">Ella</a></li>
-    </ul>
+
+    <h2>Coding Skills</h2>
+
+    <div class="card-container">
+      <!-- HTML Card -->
+      <div class="card">
+        <img src="https://phoenixnap.com/glossary/wp-content/uploads/2023/04/what-is-html.jpg" alt="HTML">
+        <p><strong>HTML</strong> is the foundation of web development, used to structure content on the web.</p>
+      </div>
+
+      <!-- CSS Card -->
+      <div class="card">
+        <img src="https://einstieg-in-wp.de/wp-content/uploads/2024/09/wordpress-und-css-1536x1024.jpg" alt="CSS">
+        <p><strong>CSS</strong> styles the content, making websites visually appealing and responsive.</p>
+      </div>
+
+      <!-- JavaScript Card -->
+      <div class="card">
+        <img src="https://images.computerwoche.de/bdb/3391848/840x473.jpg" alt="JavaScript">
+        <p><strong>JavaScript</strong> adds interactivity to websites, making them dynamic and engaging.</p>
+      </div>
+
+      <!-- APIs Card -->
+      <div class="card">
+        <img src="https://www.sitecrafting.com/wp-content/uploads/whats-an-api-image-2.png" alt="APIs">
+        <p><strong>APIs</strong> allow websites to fetch and exchange data from external sources and services.</p>
+      </div>
+    </div>
+
+    <h2>Exercises and Results</h2>
+
+    <div class="exercises">
+      <div class="exercise-item">
+        <img src="https://i.imgur.com/rgah5Fw.png" alt="HTML Form Project">
+        <p><strong>HTML CV Exercise:</strong> Created a personal CV using only HTML, including sections like personal information, education, skills, and work experience.</p>
+      </div>
+
+      <div class="exercise-item">
+        <img src="https://i.imgur.com/B1iRpPt.jpg" alt="Responsive CSS Design">
+        <p><strong>CSS Styling Exercise:</strong> Learned how to style the HTML CV with CSS by adding colors, fonts, layout adjustments, and responsive design elements.</p>
+      </div>
+
+      <div class="exercise-item">
+        <img src="https://i.imgur.com/q67aZEX.jpg" alt="JavaScript Calculator">
+        <p><strong>JavaScript Math Quiz:</strong> Developed an interactive math quiz that generates random math questions, checks user answers, and provides instant feedback.</p>
+      </div>
+
+      <div class="exercise-item">
+        <img src="https://i.imgur.com/utRnN2h.png" alt="Weather API Project">
+        <p><strong>Pokémon API Project:</strong> Built a Pokémon search application using a public API that fetches and displays Pokémon information based on user input.</p>
+      </div>
+    </div>
+
   </main>
 
   <!-- Fußbereich -->
@@ -42,6 +89,11 @@
     <p>&copy; 2025 Accenture Team</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-theme');
+    }
+  </script>
+
 </body>
 </html>
