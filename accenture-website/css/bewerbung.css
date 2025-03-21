@@ -147,8 +147,8 @@ main h2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #FFD700 40%, transparent 41%);
-  box-shadow: 0 0 10px #FFD700;
+  background: radial-gradient(circle at center, #de62ee 40%, transparent 41%);
+  box-shadow: 0 0 10px #de62ee;
   transition: all 0.5s ease;
 }
 
