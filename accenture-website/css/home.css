@@ -96,8 +96,8 @@ main p {
 }
 
 .light-theme nav ul li a:hover {
-  background-color: #ddd;
-  color: #333;
+  background-color: #1b1a1a;
+  color: #ece9e9;
 }
 
 /* Teamliste im Light Theme */
