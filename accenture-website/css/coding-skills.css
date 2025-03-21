@@ -155,3 +155,27 @@ h1, h2 {
 .light-theme .exercise-item p {
   color: #333;
 }
+
+/* Лого и заголовок */
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Переносит контент влево */
+  gap: 20px;
+  padding-left: 30px; /* Добавляет отступ слева, чтобы не прилипало к краю */
+}
+
+.logo-title h1 {
+  margin: 0;
+  font-size: 36px;
+  color: white;
+}
+
+.logo {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
