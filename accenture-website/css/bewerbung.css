@@ -82,7 +82,7 @@ main h2 {
 }
 
 .btn {
-  background-color: #FFD700;
+  background-color: #e24fb6;
   color: #333;
   padding: 15px 30px;
   border-radius: 10px;
@@ -93,7 +93,7 @@ main h2 {
 
 .btn:hover {
   background-color: #333;
-  color: #FFD700;
+  color:  #e24fb6;
 }
 
 .light-theme {
@@ -124,11 +124,11 @@ main h2 {
 
 .light-theme .btn {
   background-color: #333;
-  color: #FFD700;
+  color:  #e24fb6;
 }
 
 .light-theme .btn:hover {
-  background-color: #FFD700;
+  background-color: #de62ee;
   color: #333;
 }
 
@@ -155,4 +155,28 @@ main h2 {
 .light-theme .icon {
   background: radial-gradient(circle at center, #333 40%, transparent 41%);
   box-shadow: 0 0 10px #333;
+}
+
+/* Лого и заголовок */
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Переносит контент влево */
+  gap: 20px;
+  padding-left: 30px; /* Добавляет отступ слева, чтобы не прилипало к краю */
+}
+
+.logo-title h1 {
+  margin: 0;
+  font-size: 36px;
+  color: white;
+}
+
+.logo {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }

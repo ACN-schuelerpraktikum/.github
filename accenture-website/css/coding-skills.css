@@ -49,8 +49,8 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #FFD700 40%, transparent 41%);
-  box-shadow: 0 0 10px #FFD700;
+  background: radial-gradient(circle at center, #e24fb6 40%, transparent 41%);
+  box-shadow: 0 0 10px  #e24fb6;
   transition: all 0.5s ease;
 }
 
