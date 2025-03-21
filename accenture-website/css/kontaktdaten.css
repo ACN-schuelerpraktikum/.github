@@ -46,34 +46,27 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* Überschriften */
-.container h2 {
-  font-size: 32px;
+/* Kontaktkarte */
+.contact-card {
+  background-color: #444;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.container h3 {
-  margin-top: 40px;
-  font-size: 28px;
-}
-
-/* Kontaktinformationen */
-.contact-info {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.contact-info p {
+.contact-card p {
   font-size: 18px;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
-.contact-info a {
-  color: #007BFF;
+.contact-card a {
+  color: #FFD700;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.contact-info a:hover {
+.contact-card a:hover {
   text-decoration: underline;
 }
 
@@ -128,8 +121,13 @@ iframe {
   color: #ece9e9;
 }
 
-.light-theme .contact-info a {
-  color: #0056b3;
+.light-theme .contact-card {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.light-theme .contact-card a {
+  color: #333;
 }
 
 .light-theme .icon {
