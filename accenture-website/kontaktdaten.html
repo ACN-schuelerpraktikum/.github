@@ -2,34 +2,9 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Über uns - Internship Team</title>
+  <title>Kontaktdaten - Internship Team</title>
   <link rel="stylesheet" href="css/kontaktdaten.css">
 </head>
-<style>
-  body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-  }
-  .container {
-      max-width: 600px;
-      margin: auto;
-  }
-  iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-bottom: 50px;
-  }
-  .contact-info {
-      margin-top: 20px;
-  }
-  a {
-      color: #007BFF;
-      text-decoration: none;
-      font-weight: bold;
-  }
-</style>
 <body>
 
   <!-- Theme Umschalter -->
@@ -52,30 +27,38 @@
   </header>
 
   <!-- Hauptinhalt -->
-  <div class="container">
-    <h2>Contact us</h2>
+  <main class="container">
+    <h2>Contact Us</h2>
     
-    <div class="contact-info">
-        <p><strong>Address:</strong> Campus Kronberg 1, 61476 Kronberg im Taunus, Deutschland</p>
-        <p><strong>Telefone:</strong> <a href="tel:+49123456789">+49 (0) 61 73 94-99</a></p>
-        <p><strong>More about us:</strong> <a href="https://www.accenture.com/de-de/about/location-index" target="_blank">Our Website</a></p>
+    <!-- Новый контейнер с фоном -->
+    <div class="contact-card">
+      <div class="contact-info">
+        <p><strong>📍 Address:</strong> Campus Kronberg 1, 61476 Kronberg im Taunus, Deutschland</p>
+        <p><strong>📞 Phone:</strong> <a href="tel:+4961739499">+49 (0) 61 73 94-99</a></p>
+        <p><strong>🌐 More about us:</strong> <a href="https://www.accenture.com/de-de/about/location-index" target="_blank">Our Website</a></p>
+      </div>
     </div>
 
     <h3>Our Location</h3>
-    <!-- Eingebettete Google Maps-Karte -->
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d163537.6770729263!2d8.2778237!3d50.1746719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bda64b45643aa9%3A0x289e02bbf4a998cf!2sAccenture!5e0!3m2!1sde!2sde!4v1742550765508!5m2!1sde!2sde" 
-        allowfullscreen="" loading="lazy">
-    </iframe>
-</div>
 
-</body>
+    <!-- Google Maps Karte -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d163537.6770729263!2d8.2778237!3d50.1746719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bda64b45643aa9%3A0x289e02bbf4a998cf!2sAccenture!5e0!3m2!1sde!2sde!4v1742550765508!5m2!1sde!2sde" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </main>
 
   <!-- Fußbereich -->
   <footer>
     <p>&copy; 2025 Accenture Team</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-theme');
+    }
+  </script>
+
 </body>
 </html>

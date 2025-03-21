@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Home - Internship Team</title>
@@ -14,36 +14,123 @@
 
   <!-- Kopfbereich -->
   <header>
-    <h1>Willkommen auf unserer Teamseite</h1>
+    <h1>Welcome to Our Internship Team Page</h1>
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
-        <li><a href="bewerbung.html">Bewerbung</a></li>
-        <li><a href="coding-skills.html">Codingskills</a></li>
-        <li><a href="soft-skills.html">Softskills</a></li>
-        <li><a href="kontaktdaten.html">Kontaktdaten</a></li>
+        <li><a href="bewerbung.html">Application</a></li>
+        <li><a href="coding-skills.html">Coding Skills</a></li>
+        <li><a href="soft-skills.html">Soft Skills</a></li>
+        <li><a href="kontaktdaten.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hauptinhalt -->
   <main>
-    <h2>Startseite</h2>
+    <h2>Welcome Page</h2>
 
-    <p>Welcome to our Internship Team Website! 🚀
-      We are a motivated team of interns who have worked together on exciting projects during our internship. Here, you can learn more about us – from our skills and experiences to our individual CVs.
-      Whether you're interested in our professional backgrounds or just curious about what drives us – feel free to explore! We're excited to share our knowledge and experiences with you.
-      Enjoy browsing! 😊.</p>
+    <p>
+      Welcome to our Internship Page! 🚀 During our Internship we learned plenty of new Skills. From Soft Skills to Coding, representing Accentures possibilities and facettes.😊
+    </p>
 
-      <h2>Unser neuestes Video</h2>
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/-FLZ0xPVOGg?si=Q-wHqm6N6KpmAsi4"
-          title="YouTube video player"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
+    <h2>📺 Our Latest Video</h2>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/-FLZ0xPVOGg?si=Q-wHqm6N6KpmAsi4"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h2>🗺️ Internship Learning Roadmap</h2>
+
+    <div class="roadmap">
+
+      <!-- Week 1 -->
+      <div class="week">
+        <h3>Week 1</h3>
+
+        <!-- Day 1 -->
+        <h4>🗓️ Day 1: Understanding the Target Group and Stakeholders</h4>
+        <ul>
+          <li>Target Group and Needs</li>
+          <li>Stakeholders</li>
+        </ul>
+
+        <!-- Day 2 -->
+        <h4>🗓️ Day 2: Product Concept and Planning</h4>
+        <ul>
+          <li>Product Type</li>
+          <li>Key Features</li>
+        </ul>
+
+        <!-- Day 3 -->
+        <h4>🗓️ Day 3: Technical Development</h4>
+        <ul>
+          <li>Technical Specifications</li>
+        </ul>
+
+        <!-- Day 4 -->
+        <h4>🗓️ Day 4: Marketing Strategy and Costs</h4>
+        <ul>
+          <li>Advertising/Marketing</li>
+          <li>Costs and Pricing</li>
+        </ul>
+
+        <!-- Day 5 -->
+        <h4>🗓️ Day 5: Legal and Project Management</h4>
+        <ul>
+          <li>Legal Aspects</li>
+          <li>Timeline</li>
+        </ul>
+
       </div>
+
+      <div class="week">
+        <h3>Week 2</h3>
+      
+        <!-- Day 1 -->
+        <h4>🗓️ Day 1: Web Development Basics</h4>
+        <ul>
+          <li>HTML Fundamentals</li>
+          <li>CSS Styling Techniques</li>
+        </ul>
+      
+        <!-- Day 2 -->
+        <h4>🗓️ Day 2: JavaScript Essentials</h4>
+        <ul>
+          <li>JavaScript Basics</li>
+          <li>DOM Manipulation</li>
+        </ul>
+      
+        <!-- Day 3 -->
+        <h4>🗓️ Day 3: Java Introduction</h4>
+        <ul>
+          <li>Java Basics</li>
+          <li>OOP Principles in Java</li>
+        </ul>
+      
+        <!-- Day 4 -->
+        <h4>🗓️ Day 4: APIs and Data Handling</h4>
+        <ul>
+          <li>Working with APIs</li>
+          <li>Fetching and Displaying Data</li>
+        </ul>
+      
+        <!-- Day 5 -->
+        <h4>🗓️ Day 5: Team Collaboration and Projects</h4>
+        <ul>
+          <li>Team Collaboration Projects</li>
+          <li>Final Project Presentation</li>
+        </ul>
+      
+      </div>
+      
+
+    </div>
+
   </main>
 
   <!-- Fußbereich -->
@@ -51,6 +138,12 @@
     <p>&copy; 2025 Accenture Team</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    // Toggle Light/Dark Theme
+    function toggleTheme() {
+      document.body.classList.toggle('light-theme');
+    }
+  </script>
+
 </body>
 </html>

@@ -48,6 +48,7 @@ main {
 
 main h2 {
   font-size: 32px;
+  margin-top: 40px;
 }
 
 main p {
@@ -55,28 +56,56 @@ main p {
   text-align: justify;
 }
 
-/* Teamliste im Hauptinhalt */
-.team-list {
-  list-style: none;       /* Entfernt die Punkte */
-  padding-left: 0;        /* Kein Einzug */
-  text-align: left;       /* Linksbündig */
-  max-width: 400px;       /* Optional: Begrenzung der Breite */
-  margin: 0 auto;         /* Zentrierung des Blocks */
+/* Video Styling */
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.team-list li {
+/* Roadmap Styles */
+.roadmap {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.week {
+  background-color: #444;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.week h3 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #FFD700;
+}
+
+.week ul {
+  list-style: none;
+  padding: 0;
+}
+
+.week ul li {
+  font-size: 18px;
   margin: 10px 0;
+  position: relative;
+  padding-left: 24px;
 }
 
-.team-list li a {
-  font-size: 24px;
-  color: #ffffff;         /* Farbe für Dunkelmodus */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.team-list li a:hover {
-  color: #4b4b49;
+.week ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #FFD700;
 }
 
 /* Light Theme */
@@ -100,13 +129,21 @@ main p {
   color: #ece9e9;
 }
 
-/* Teamliste im Light Theme */
-.light-theme .team-list li a {
-  color: #000000;         /* Farbe der Namen im Light Theme */
+.light-theme .video-container iframe {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.light-theme .team-list li a:hover {
-  color: #555555;         /* Hover-Farbe im Light Theme */
+.light-theme .week {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.light-theme .week h3 {
+  color: #333;
+}
+
+.light-theme .week ul li::before {
+  color: #333;
 }
 
 /* Theme Umschalter */
@@ -132,15 +169,4 @@ main p {
 .light-theme .icon {
   background: radial-gradient(circle at center, #333 40%, transparent 41%);
   box-shadow: 0 0 10px #333;
-}
-
-.video-container iframe {
-  width: 100%;
-  max-width: 560px;
-  height: 315px;
-  border-radius: 20px;
-  overflow: hidden;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
